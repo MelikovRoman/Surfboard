@@ -1,0 +1,29 @@
+.features {
+  display: flex;
+}
+
+.features__item {
+  flex: 1;
+  position: relative;
+  padding: 0 2%;
+
+  &:first-child {
+    padding-left: 0;
+ }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+}
+
+  &:before {
+    position: absolute;
+    content: url(../img/features-decor.png);
+    top: 60px;
+    right: 0;
+    transform: translateX(50%);
+  }
+}

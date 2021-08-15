@@ -1,0 +1,113 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__column {
+  width: 100%;
+  margin-right: 26px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+ display: flex;
+ justify-content: space-between;
+
+ &--controls{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 19px;
+ }
+}
+
+.form__label {
+  display: block;
+  width: 100%;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--radio{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 40px;
+    margin-right: 14px;
+  }
+}
+
+.form__radio-button + label::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  width: 25px;
+  height: 25px;
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.form__radio-button:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -32px;
+  width: 15px;
+  height: 15px;
+  background-color: $yellow;
+  border-radius: 50%;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 17px 12px;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:focus {
+    border-color: $yellow;
+    outline: none;
+  }
+
+  &--textarea {
+    width: 450px;
+    height: 155px;
+    resize: none;
+    margin-bottom: 23px;
+  }
+}
+
+.form__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  width: 24px;
+  height: 24px;
+  background-color: $white;
+  border-radius: 4px;
+}
+
+.form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -30px;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form__btn {
+  margin-top: 48px;
+}

@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  margin-right: 22px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__item a{
+  color: $white;
+  font-weight: 700;
+}

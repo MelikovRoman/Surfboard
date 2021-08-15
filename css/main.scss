@@ -1,0 +1,36 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//Colors
+$white: #FFFFFF;
+$background-black: #2B2B2B;
+$blue: #3A587E;
+$yellow: #FEDB3F;
+$dark-yellow: #FFD517;
+$light-blue: #1968B1;
+$gray: #666666;
+$light-gray: #F2F5F4;
+$extra-light-gray: #F8FAF9;
+
+//z-index
+$z-fixed-menu: 100;
+
+//setup
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+@import "layout";
+
+//blocks
+@import "sass/main-banner.scss";
+@import "sass/advantages.scss";
+@import "sass/header.scss";
+@import "sass/nav.scss";
+@import "sass/btn.scss";
+@import "sass/section.scss";
+@import "sass/headline.scss";
+@import "sass/features.scss";
+@import "sass/feature.scss";
+@import "sass/reviews.scss";
+@import "sass/interactive-avatar.scss";
+@import "sass/form.scss";
+@import "sass/map.scss";
+@import "sass/fixed-menu.scss";

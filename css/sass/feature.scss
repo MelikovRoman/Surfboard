@@ -1,0 +1,35 @@
+.feature {
+  text-align: center;
+}
+
+.feature__image {
+  display: inline-block;
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-color: $light-gray;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.feature__icon {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature__title {
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.feature__text {
+  font-weight: 300;
+  color: $gray;
+}

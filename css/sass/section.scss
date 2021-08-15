@@ -1,0 +1,32 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--form {
+    background-image: url(../img/form-background.jpg);
+    background-color: $background-black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+  }
+
+  &--map{
+    background-image: url(../img/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.section__title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+

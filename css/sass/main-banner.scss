@@ -1,0 +1,38 @@
+.main-banner {
+  background-image: url(../img/banner-background.jpg);
+  background-color: $light-blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 650px;
+  color: $white;
+  padding: 24px 0px 65px 0px;
+}
+
+.main-banner__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.main-banner__title-section {
+  width: 50%;
+}
+
+.main-banner__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.main-banner__description {
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 39px;
+}
+
+
