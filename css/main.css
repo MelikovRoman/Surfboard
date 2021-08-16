@@ -135,6 +135,9 @@ img {
   display: flex;
   margin-right: 30px;
 }
+.advantages__item:last-child {
+  margin-right: 0;
+}
 
 .advantages__text {
   font-weight: 700;
@@ -154,10 +157,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header__logo {
-  margin-right: 46px;
 }
 
 .header-nav {
@@ -187,27 +186,8 @@ img {
   font-weight: 700;
 }
 
-.header__contacts {
-  margin-left: 47px;
-  color: #FFFFFF;
-  font-size: 22px;
-  line-height: 18px;
-  font-style: unset;
-  font-weight: 700;
-}
-
-.header__phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__icon {
-  width: 13px;
-  height: 14px;
+.logo__header {
+  margin-right: 46px;
 }
 
 .nav {
@@ -235,6 +215,29 @@ img {
 .nav__item a {
   color: #FFFFFF;
   font-weight: 700;
+}
+
+.contacts {
+  margin-left: 47px;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 18px;
+  font-style: unset;
+  font-weight: 700;
+}
+
+.contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__icon {
+  width: 13px;
+  height: 14px;
 }
 
 .btn {
@@ -493,6 +496,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 13px;
 }
 .form__row--controls {
   -webkit-box-pack: start;
@@ -500,14 +504,13 @@ img {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 }
 
 .form__label {
   display: block;
   width: 100%;
   margin-right: 13px;
-  margin-bottom: 13px;
   cursor: pointer;
 }
 .form__label:last-child {
@@ -516,6 +519,7 @@ img {
 .form__label--radio {
   position: relative;
   display: block;
+  width: auto;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -562,7 +566,7 @@ img {
   width: 450px;
   height: 155px;
   resize: none;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .form__checkbox + label::before {
@@ -588,7 +592,7 @@ img {
 }
 
 .form__btn {
-  margin-top: 48px;
+  margin-top: 42px;
 }
 
 .map {
@@ -610,6 +614,9 @@ img {
 
 .fixed-menu__item {
   margin-bottom: 7px;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #FFFFFF;

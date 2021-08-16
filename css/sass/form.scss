@@ -15,11 +15,12 @@
 .form__row {
  display: flex;
  justify-content: space-between;
+ margin-bottom: 13px;
 
  &--controls{
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 19px;
+    margin-bottom: 23px;
  }
 }
 
@@ -27,7 +28,6 @@
   display: block;
   width: 100%;
   margin-right: 13px;
-  margin-bottom: 13px;
   cursor: pointer;
 
   &:last-child {
@@ -37,6 +37,7 @@
   &--radio{
     position: relative;
     display: block;
+    width: auto;
     cursor: pointer;
     user-select: none;
     margin-left: 40px;
@@ -82,7 +83,7 @@
     width: 450px;
     height: 155px;
     resize: none;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 }
 
@@ -109,5 +110,5 @@
 }
 
 .form__btn {
-  margin-top: 48px;
+  margin-top: 42px;
 }

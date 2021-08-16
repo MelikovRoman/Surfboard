@@ -4,10 +4,6 @@
   justify-content: space-between;
 }
 
-.header__logo {
-  margin-right: 46px;
-}
-
 .header-nav {
   display: flex;
 }
@@ -28,23 +24,4 @@
 .header-nav__item a{
   color: $white;
   font-weight: 700;
-}
-
-.header__contacts {
-  margin-left: 47px;
-  color: $white;
-  font-size: 22px;
-  line-height: 18px;
-  font-style: unset;
-  font-weight: 700;
-}
-
-.header__phone {
-  display: flex;
-  align-items: center;
-}
-
-.header__icon {
-  width: 13px;
-  height: 14px;
 }
