@@ -186,7 +186,7 @@ img {
   font-weight: 700;
 }
 
-.logo__header {
+.logo__img {
   margin-right: 46px;
 }
 
@@ -235,7 +235,7 @@ img {
           align-items: center;
 }
 
-.contacts__icon {
+.contacts__img {
   width: 13px;
   height: 14px;
 }
@@ -497,6 +497,9 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 13px;
+}
+.form__row:last-child {
+  margin-bottom: 0;
 }
 .form__row--controls {
   -webkit-box-pack: start;

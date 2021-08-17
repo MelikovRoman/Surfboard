@@ -17,7 +17,11 @@
  justify-content: space-between;
  margin-bottom: 13px;
 
- &--controls{
+  &:last-child {
+    margin-bottom: 0;
+ }
+
+  &--controls{
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 23px;
