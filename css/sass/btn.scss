@@ -1,12 +1,12 @@
 .btn {
   font-weight: 800;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: rem(16px);
+  line-height: rem(18px);
   text-transform: uppercase;
-  padding: 21px 41px 21px 41px;
+  padding: rem(21px) rem(41px) rem(21px) rem(41px);
   background-color: $yellow;
   border: none;
-  border-radius: 100px;
+  border-radius: rem(100px);
   cursor: pointer;
 
   &:hover {
@@ -16,11 +16,11 @@
   &--theme--transparent {
     background-color: transparent;
     color: $white;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: rem(18px);
+    line-height: rem(22px);
     font-weight: 400;
     text-transform: capitalize;
-    padding: 21px;
+    padding: rem(21px);
 
     &:hover {
       color: $yellow;

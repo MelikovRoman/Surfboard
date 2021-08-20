@@ -1,11 +1,20 @@
 .features {
   display: flex;
+
+  @include phone {
+    flex-direction: column;
+  }
 }
 
 .features__item {
   flex: 1;
   position: relative;
   padding: 0 2%;
+
+  @include phone {
+    padding: 0;
+    margin-bottom: rem(20px);
+  }
 
   &:first-child {
     padding-left: 0;
@@ -14,7 +23,7 @@
   &:last-child {
     padding-right: 0;
 
-    &::before {
+    &:before {
       display: none;
     }
 }
@@ -22,8 +31,12 @@
   &:before {
     position: absolute;
     content: url(../img/features-decor.png);
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
+
+    @include tablet {
+      display: none;
+    }
   }
 }

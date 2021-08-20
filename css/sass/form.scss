@@ -1,21 +1,36 @@
 .form {
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+    padding: 0 19% 0 19%;
+  }
+
+  @include phone {
+    padding: 0;
+  }
 }
 
 .form__column {
   width: 100%;
-  margin-right: 26px;
+  margin-right: rem(26px);
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
 
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
 .form__row {
  display: flex;
  justify-content: space-between;
- margin-bottom: 13px;
+ margin-bottom: rem(13px);
 
   &:last-child {
     margin-bottom: 0;
@@ -24,14 +39,18 @@
   &--controls{
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 23px;
+    margin-bottom: rem(23px);
+
+    @include phone {
+      justify-content: center;
+    }
  }
 }
 
 .form__label {
   display: block;
   width: 100%;
-  margin-right: 13px;
+  margin-right: rem(13px);
   cursor: pointer;
 
   &:last-child {
@@ -44,17 +63,17 @@
     width: auto;
     cursor: pointer;
     user-select: none;
-    margin-left: 40px;
-    margin-right: 14px;
+    margin-left: rem(40px);
+    margin-right: rem(14px);
   }
 }
 
 .form__radio-button + label::before {
   content: "";
   position: absolute;
-  left: -37px;
-  width: 25px;
-  height: 25px;
+  left: rem(-37px);
+  width: rem(25px);
+  height: rem(25px);
   background-color: $white;
   border-radius: 50%;
 }
@@ -62,10 +81,10 @@
 .form__radio-button:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -32px;
-  width: 15px;
-  height: 15px;
+  top: rem(5px);
+  left: rem(-32px);
+  width: rem(15px);
+  height: rem(15px);
   background-color: $yellow;
   border-radius: 50%;
 }
@@ -73,10 +92,14 @@
 .form__input {
   display: block;
   width: 100%;
-  padding: 17px 12px;
-  border: 3px solid transparent;
-  border-radius: 4px;
+  padding: rem(17px) rem(12px);
+  border: rem(3px) solid transparent;
+  border-radius: rem(4px);
   cursor: pointer;
+
+  @include tablet {
+    padding: rem(8px) rem(6px);
+  }
 
   &:focus {
     border-color: $yellow;
@@ -84,35 +107,45 @@
   }
 
   &--textarea {
-    width: 450px;
-    height: 155px;
+    width: 100%;
+    height: rem(155px);
     resize: none;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
+
+    @include tablet {
+      width: 100%;
+      height: rem(82px);
+    }
   }
 }
 
 .form__checkbox + label::before {
   content: "";
   position: absolute;
-  left: -37px;
-  width: 24px;
-  height: 24px;
+  left: rem(-37px);
+  width: rem(24px);
+  height: rem(24px);
   background-color: $white;
-  border-radius: 4px;
+  border-radius: rem(4px);
 }
 
 .form__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -30px;
-  width: 15px;
-  height: 13px;
+  top: rem(8px);
+  left: rem(-30px);
+  width: rem(15px);
+  height: rem(13px);
   background-image: url("../img/checkmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .form__btn {
-  margin-top: 42px;
+  margin-top: rem(42px);
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
 }

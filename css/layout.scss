@@ -1,33 +1,45 @@
+html {
+  font-size: $baseFontSize;
+
+  @include tablet {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phone {
+    font-size: $baseFontSize - 3px;
+  }
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-size: $baseFontSize;
   font-family: "Alegreya Sans", sans-serif;
-  line-height: 22px;
+  line-height: rem(22px);
   position: relative;
 }
 
 .warapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
+  min-width: rem(0px);
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
 }
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: rem(1px);
+  height: rem(1px);
+  margin: rem(-1px);
   border: 0;
   padding: 0;
   white-space: nowrap;

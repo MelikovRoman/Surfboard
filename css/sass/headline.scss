@@ -1,10 +1,18 @@
 .headline__title {
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
 }
 
 .headline__desription {
   text-align: center;
   padding: 0 27% 0 27%;
-  margin-bottom: 49px;
+  margin-bottom: rem(49px);
   color: $gray;
+
+  @include tablet {
+    padding: 0 21% 0 21%;
+  }
+
+  @include phone {
+    padding: 0 9% 0 9%;
+  }
 }

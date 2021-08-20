@@ -1,8 +1,13 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+$tablet: 768px;
+$phone: 480px;
+
 //Colors
 $white: #FFFFFF;
+$black: #292929;
 $background-black: #2B2B2B;
 $blue: #3A587E;
 $yellow: #FEDB3F;
@@ -14,6 +19,9 @@ $extra-light-gray: #F8FAF9;
 
 //z-index
 $z-fixed-menu: 100;
+
+//media
+@import "media";
 
 //setup
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
@@ -36,3 +44,6 @@ $z-fixed-menu: 100;
 @import "sass/form.scss";
 @import "sass/map.scss";
 @import "sass/fixed-menu.scss";
+@import "sass/hamburger.scss";
+@import "sass/footer.scss";
+@import "sass/social.scss";

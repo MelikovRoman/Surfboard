@@ -1,18 +1,42 @@
 .contacts {
-  margin-left: 47px;
   color: $white;
-  font-size: 22px;
-  line-height: 18px;
+  font-size: rem(22px);
+  line-height: rem(18px);
   font-style: unset;
   font-weight: 700;
+  padding-top: 7px;
 }
 
 .contacts__phone {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+
+  @include phone {
+    justify-content: center;
+  }
+}
+
+.contacts__icon {
+  flex-shrink: 0;
 }
 
 .contacts__img {
-  width: 13px;
-  height: 14px;
+  width: rem(13px);
+  height: rem(14px);
+}
+
+.contacts__address-text,
+.contacts__number-footer {
+  font-size: rem(21px);
+  line-height: rem(24px);
+  font-weight: 400;
+}
+
+.contacts__inner {
+  margin-bottom: rem(7px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

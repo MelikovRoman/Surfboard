@@ -1,11 +1,24 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+
+  @include tablet {
+    align-items: center;
+    background-color: $light-blue;
+    height: rem(82px);
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
 }
 
-.header-nav {
-  display: flex;
+.header__nav {
+  padding-top: 7px;
+  @include tablet {
+    display: none;
+  }
 }
 
 .header-nav__list {
@@ -14,7 +27,7 @@
 }
 
 .header-nav__item {
-  margin-right: 22px;
+  margin-right: rem(22px);
 
   &:last-child {
     margin-right: 0;
@@ -24,4 +37,10 @@
 .header-nav__item a{
   color: $white;
   font-weight: 700;
+}
+
+.header__contacts {
+  @include tablet {
+    display: none;
+  }
 }

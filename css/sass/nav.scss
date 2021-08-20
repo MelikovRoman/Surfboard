@@ -1,14 +1,12 @@
-.nav {
-  display: flex;
-}
-
 .nav__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav__item {
-  margin-right: 22px;
+  margin-right: rem(22px);
+  margin-bottom: rem(10px);
 
   &:last-child {
     margin-right: 0;

@@ -1,32 +1,53 @@
 .feature {
   text-align: center;
+
+  @include phone {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .feature__image {
   display: inline-block;
   position: relative;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   border-radius: 50%;
   background-color: $light-gray;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include phone {
+    margin-bottom: 0;
+    margin-right: rem(12px);
+  }
 }
 
 .feature__icon {
-  width: 68px;
-  height: 68px;
+  width: rem(68px);
+  height: rem(68px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.feature__desription {
+  @include phone {
+    width: 70%;
+  }
+}
+
 .feature__title {
-  font-size: 27px;
-  line-height: 32px;
+  font-size: rem(27px);
+  line-height: rem(32px);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include phone {
+    margin-bottom: rem(10px);
+    margin-top: rem(8px);
+  }
 }
 
 .feature__text {

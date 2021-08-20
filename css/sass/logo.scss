@@ -1,3 +1,11 @@
-.logo__img {
-  margin-right: 46px;
+.logo {
+  flex-shrink: 0;
+
+  @include tablet {
+    margin-left: rem(30px);
+  }
+
+  @include phone {
+    margin-left: rem(10px);
+  }
 }

@@ -1,0 +1,30 @@
+.footer {
+  background-color: $white;
+  width: 100%;
+  height: rem(90px);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5% 0 5%;
+
+  @include tablet {
+    justify-content: space-between;
+  }
+
+  @include phone {
+    flex-direction: column;
+    justify-content: center;
+    height: 14%;
+  }
+}
+
+.footer__contacts {
+  margin-top: rem(17px);
+  padding-top: 0;
+  color: $black;
+
+  @include phone {
+    text-align: center;
+  }
+}

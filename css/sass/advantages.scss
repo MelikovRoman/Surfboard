@@ -4,7 +4,7 @@
 
 .advantages__item {
   display: flex;
-  margin-right: 30px;
+  margin-right: rem(30px);
 
   &:last-child {
     margin-right: 0;
@@ -13,8 +13,8 @@
 
 .advantages__text {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  margin-left: 14px;
-  width: 90px;
+  font-size: rem(16px);
+  line-height: rem(18px);
+  margin-left: rem(14px);
+  width: rem(90px);
 }
