@@ -205,6 +205,12 @@ img {
   width: 5rem;
 }
 
+.advantages__icon {
+  width: 35px;
+  height: 35px;
+  fill: #FFFFFF;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,11 +340,9 @@ img {
 .contacts__icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-.contacts__img {
   width: 0.7222222222rem;
   height: 0.7777777778rem;
+  fill: #FFFFFF;
 }
 
 .contacts__address-text,
@@ -467,6 +471,9 @@ img {
   .features__item {
     padding: 0;
     margin-bottom: 1.1111111111rem;
+  }
+  .features__item:last-child {
+    margin-bottom: 0;
   }
 }
 .features__item:first-child {
@@ -599,6 +606,7 @@ img {
 .reviews__description {
   width: 55%;
   margin-left: 2.2222222222rem;
+  margin-top: 1.5555555556rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__description {
@@ -612,7 +620,6 @@ img {
   line-height: 1.7777777778rem;
   font-weight: 700;
   margin-bottom: 0.7777777778rem;
-  margin-top: 1.5555555556rem;
 }
 
 .reviews__text {
@@ -897,6 +904,10 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 3%;
+  right: 0;
+  z-index: 100;
   margin-right: 2rem;
 }
 @media screen and (max-width: 768px) {
@@ -960,6 +971,16 @@ img {
 @media screen and (max-width: 480px) {
   .footer__contacts {
     text-align: center;
+    margin-top: 0;
+  }
+}
+
+.footer__social {
+  margin-top: 2.1111111111rem;
+}
+@media screen and (max-width: 480px) {
+  .footer__social {
+    margin-top: 0.8888888889rem;
   }
 }
 
@@ -970,11 +991,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 2.1111111111rem;
 }
 @media screen and (max-width: 480px) {
   .social__list {
-    margin-top: 0.8888888889rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -988,9 +1007,11 @@ img {
   margin-right: 0;
 }
 
-.test {
-  background-color: black;
-  outline: 5px solid red;
-  width: 50px;
-  height: 50px;
+.social__icon {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  fill: #B3B3B3;
+}
+.social__icon:hover {
+  fill: #292929;
 }

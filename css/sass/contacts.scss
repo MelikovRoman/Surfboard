@@ -19,11 +19,9 @@
 
 .contacts__icon {
   flex-shrink: 0;
-}
-
-.contacts__img {
   width: rem(13px);
   height: rem(14px);
+  fill: $white;
 }
 
 .contacts__address-text,

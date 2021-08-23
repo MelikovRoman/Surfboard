@@ -1,10 +1,8 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  margin-top: rem(38px);
 
   @include phone {
-    margin-top: rem(16px);
     justify-content: center;
   }
 }
@@ -17,9 +15,12 @@
   }
 }
 
-.test {
-  background-color: black;
-  outline: 5px solid red;
-  width: 50px;
-  height: 50px;
+.social__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill:#B3B3B3;
+
+  &:hover {
+    fill: $black;
+  }
 }

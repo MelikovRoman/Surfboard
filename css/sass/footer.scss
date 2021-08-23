@@ -26,5 +26,14 @@
 
   @include phone {
     text-align: center;
+    margin-top: 0;
+  }
+}
+
+.footer__social {
+  margin-top: rem(38px);
+
+  @include phone {
+    margin-top: rem(16px);
   }
 }

@@ -32,6 +32,7 @@
 .reviews__description {
   width: 55%;
   margin-left: rem(40px);
+  margin-top: rem(28px);
 
   @include tablet {
     width: 100%;
@@ -44,7 +45,6 @@
   line-height: rem(32px);
   font-weight: 700;
   margin-bottom: rem(14px);
-  margin-top: rem(28px);
 }
 
 .reviews__text {
