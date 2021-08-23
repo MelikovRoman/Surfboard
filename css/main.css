@@ -206,8 +206,8 @@ img {
 }
 
 .advantages__icon {
-  width: 35px;
-  height: 35px;
+  width: 1.9444444444rem;
+  height: 1.9444444444rem;
   fill: #FFFFFF;
 }
 
@@ -338,8 +338,6 @@ img {
 }
 
 .contacts__icon {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   width: 0.7222222222rem;
   height: 0.7777777778rem;
   fill: #FFFFFF;
