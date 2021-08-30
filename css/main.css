@@ -1082,9 +1082,6 @@ img {
   }
 }
 
-.product__photo {
-  height: 100%;
-}
 @media screen and (max-width: 768px) {
   .product__photo {
     display: inline-block;
