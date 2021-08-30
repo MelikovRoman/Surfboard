@@ -55,6 +55,10 @@
   @include tablet {
     display: inline-block;
   }
+
+  @include phone {
+    max-height: rem(330px);
+  }
 }
 
 .product__info-row {
