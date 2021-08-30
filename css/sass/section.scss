@@ -14,12 +14,16 @@
     color: $white;
   }
 
-  &--map{
+  &--map {
     background-image: url(../img/map.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  }
+
+  &--slider {
+    background-color: $extra-light-gray;
   }
 }
 
