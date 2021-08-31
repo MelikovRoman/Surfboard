@@ -17,6 +17,22 @@
   @include phone {
     margin-right: rem(10px);
   }
+
+  &--active {
+    .hamburger__plank {
+      &:nth-child(1){
+        opacity:0;
+      }
+
+      &:nth-child(2){
+        transform:rotate(45deg);
+      }
+
+      &:nth-child(3){
+      transform:rotate(-45deg) translateY(-6px) translateX(5px);
+    }
+    }
+  }
 }
 
 .hamburger__plank {
@@ -24,4 +40,5 @@
   background: $white;
   height: 4px;
   border-radius: 9px;
+  transition:all .3s;
 }
