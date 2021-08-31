@@ -358,6 +358,12 @@ img {
   fill: #FFFFFF;
 }
 
+.contacts__icon-footer {
+  width: 0.7222222222rem;
+  height: 0.7777777778rem;
+  fill: #292929;
+}
+
 .contacts__address-text,
 .contacts__number-footer {
   font-size: 1.1666666667rem;
@@ -1196,18 +1202,35 @@ img {
   }
 }
 
+.product__icon {
+  width: 2.1111111111rem;
+  height: 2.1111111111rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  fill: #FFFFFF;
+}
+
 .product__button {
-  padding: 17px 5px 12px 7px;
+  display: inline-block;
+  position: relative;
   color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.7777777778rem;
-  line-height: 0.9444444444rem;
-  background-color: #3A587E;
-  border: none;
+  width: 5.0555555556rem;
+  height: 5.0555555556rem;
   border-radius: 4px;
+  background-color: #3A587E;
   cursor: pointer;
   margin-bottom: 2.8888888889rem;
+  border: none;
+}
+.product__button p {
+  padding-top: 55px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
 }
 .product__button:hover {
   background-color: #3465A3;
@@ -1216,11 +1239,6 @@ img {
   .product__button {
     display: none;
   }
-}
-
-.product__button-image {
-  padding-left: 1.1111111111rem;
-  padding-bottom: 0.3888888889rem;
 }
 
 .overlay {
