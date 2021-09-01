@@ -114,6 +114,7 @@
 }
 
 .product__price {
+  display: flex;
   font-weight: 300;
   font-size: rem(60px);
   line-height: rem(60px);
@@ -144,7 +145,7 @@
   border-radius: 4px;
   background-color: $blue;
   cursor: pointer;
-  margin-bottom: rem(52px);
+  /*margin-bottom: rem(52px);*/
   border: none;
 
   p {

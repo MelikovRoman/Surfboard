@@ -143,12 +143,61 @@
                   <img class="product__photo" src="img/product1.png">
                 </div>
                 <div class="product__column">
-                  <button class="product__button">
-                    <svg class="product__icon">
-                      <use xlink:href="img/sprite.svg#button"></use>
-                    </svg>
-                    <p>Параметры</p>
-                  </button>
+                  <div class="product__dropdown dropdown">
+                    <button class="product__button">
+                      <svg class="product__icon">
+                        <use xlink:href="img/sprite.svg#button"></use>
+                      </svg>
+                      <p>Параметры</p>
+                    </button>
+                    <ul class="dropdown__content">
+                      <li class="dropdown__item">
+                        <div class="dropdown__index">
+                          <svg class="dropdown__logo">
+                            <use xlink:href="img/sprite.svg#long"></use>
+                          </svg>
+                          <p>Длина доски</p>
+                        </div>
+                        <p class="dropdown__text">от 2,5 м</p>
+                      </li>
+                      <li class="dropdown__item">
+                        <div class="dropdown__index">
+                          <svg class="dropdown__logo">
+                            <use xlink:href="img/sprite.svg#weight"></use>
+                          </svg>
+                          <p>Ширина доски</p>
+                        </div>
+                        <p class="dropdown__text">от 40 см</p>
+                      </li>
+                      <li class="dropdown__item">
+                        <div class="dropdown__index">
+                          <svg class="dropdown__logo">
+                            <use xlink:href="img/sprite.svg#thickness"></use>
+                          </svg>
+                          <p>Толщина</p>
+                        </div>
+                        <p class="dropdown__text">8 см</p>
+                      </li>
+                      <li class="dropdown__item">
+                        <div class="dropdown__index">
+                          <svg class="dropdown__logo">
+                            <use xlink:href="img/sprite.svg#life-time"></use>
+                          </svg>
+                          <p>Срок службы</p>
+                        </div>
+                        <p class="dropdown__text">5 лет</p>
+                      </li>
+                      <li class="dropdown__item">
+                        <div class="dropdown__index">
+                          <svg class="dropdown__logo">
+                            <use xlink:href="img/sprite.svg#width"></use>
+                          </svg>
+                          <p>Вес</p>
+                        </div>
+                        <p class="dropdown__text">7-8 кг</p>
+                      </li>
+                    </ul>
+                  </div>
                   <h3 class="product__title">Лонгборд 2.0</h3>
                   <div class="product__info">
                     <p class="product__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.                      </p>
@@ -167,7 +216,10 @@
                   </div>
                   <div class="product__info">
                     <div class="product__info-row">
-                      <p class="product__price">7000 ₽</p>
+                      <div class="product__price">
+                        <p class="product__price-sum">7000</p>
+                        <p class="product__price-currency">₽</p>
+                      </div>
                       <button class="btn">ЗАКАЗАТЬ</button>
                     </div>
                   </div>
