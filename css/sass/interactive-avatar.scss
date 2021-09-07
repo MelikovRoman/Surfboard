@@ -7,11 +7,12 @@
   border: rem(6px) solid transparent;
 
   &--active {
+    border: rem(6px) solid transparent;
     border-color: $yellow;
+  }
 
-    /*&:hover {
-      transform: scale(0.9);
-    }*/
+  &:hover {
+    transform: scale(0.9);
   }
 }
 

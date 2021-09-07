@@ -1,6 +1,8 @@
 .reviews__content {
   background-color: $extra-light-gray;
   padding: rem(42px);
+  min-height: rem(200px);
+  position: relative;
 }
 
 .reviews__content-wrapper {
@@ -10,6 +12,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+.reviews__item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+
+  &--active {
+    position: static;
+    opacity: 1;
   }
 }
 

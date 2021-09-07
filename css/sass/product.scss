@@ -1,15 +1,33 @@
 .product-slider {
   display: flex;
   align-items: center;
+
+}
+
+.product__wrapper {
+
+  overflow: hidden;
 }
 
 .product {
   display: flex;
+  min-width: 100%;
+  margin-left: rem(40px);
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   @include tablet {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.products{
+  display: flex;
+  position: relative;
+  transition: right .3s
 }
 
 .product__column {
@@ -145,7 +163,6 @@
   border-radius: 4px;
   background-color: $blue;
   cursor: pointer;
-  /*margin-bottom: rem(52px);*/
   border: none;
 
   p {

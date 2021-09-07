@@ -1,0 +1,94 @@
+.team-version-desktop {
+  display: flex;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.team-version-mobile {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.team__item {
+  position: relative;
+  width: 23%;
+  margin-right: rem(20px);
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: rem(16px);
+  }
+}
+
+.team__image {
+  margin-bottom: rem(21px);
+
+  @include tablet {
+    margin: auto;
+    margin-bottom: rem(20px);
+  }
+}
+
+.team__button {
+  display: flex;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: rem(9px);
+}
+
+.team__name {
+  font-size: rem(21px);
+  line-height: rem(25px);
+  font-weight: 700;
+  margin-right: rem(5px);
+}
+
+.team__button-logo {
+  width: 9px;
+  height: 9px;
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0px;
+  position: absolute;
+  transition: height .4s;
+
+  @include tablet {
+    position: relative;
+  }
+}
+
+.team__position {
+  font-size: rem(18px);
+  line-height: rem(22px);
+  margin-bottom: rem(4px);
+}
+
+.team__text {
+  color: $gray;
+  font-weight: 300;
+  font-size: rem(18px);
+  line-height: rem(22px);
+
+  @include tablet {
+    padding-left: 33%;
+    padding-right: 33%;
+  }
+}
