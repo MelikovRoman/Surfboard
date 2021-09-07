@@ -138,7 +138,7 @@
               <a class="product-slider__errow-left" href="#"></a>
             </div>
               <div class="product__wrapper">
-                <ul class="products">
+                <ul class="product__list">
                   <li class="products__item product">
                     <div class="product__column">
                       <img class="product__photo" src="img/product1.png">
@@ -535,23 +535,23 @@
           <form class="form">
             <div class="form__column">
               <div class="form__row">
-                <label class="form__label">Имя<input class="form__input" type="text"></label>
-                <label class="form__label">Телефон<input class="form__input" type="text"></label>
+                <label class="form__label">Имя<input class="form__input" type="text" name="name"></label>
+                <label class="form__label">Телефон<input class="form__input" type="text" name="phone"></label>
               </div>
               <div class="form__row">
-                <label class="form__label">Улица<input class="form__input" type="text"></label>
+                <label class="form__label">Улица<input class="form__input" type="text" name="street"></label>
               </div>
               <div class="form__row">
-                <label class="form__label">Дом<input class="form__input" type="text"></label>
-                <label class="form__label">Корпус<input class="form__input" type="text"></label>
-                <label class="form__label">Квартира<input class="form__input" type="text"></label>
-                <label class="form__label">Этаж<input class="form__input" type="text"></label>
+                <label class="form__label">Дом<input class="form__input" type="text" name="house"></label>
+                <label class="form__label">Корпус<input class="form__input" type="text" name="corps"></label>
+                <label class="form__label">Квартира<input class="form__input" type="text" name="apartment"></label>
+                <label class="form__label">Этаж<input class="form__input" type="text" name="level"></label>
               </div>
 
             </div>
             <div class="form__column">
               <div class="form__row">
-                <label class="form__label">Комментарий<textarea class="form__input form__input--textarea"></textarea></label>
+                <label class="form__label">Комментарий<textarea class="form__input form__input--textarea" name="comment"></textarea></label>
               </div>
               <div class="form__row form__row--controls">
                 <input class="visually-hidden form__radio-button" type="radio" id="money" name="pay-way" checked>
@@ -694,6 +694,13 @@
           </li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="popup__content">
+      <p class="popup__text">Cообщение отправлено</p>
+      <button class="popup__close btn">закрыть</button>
     </div>
   </div>
 

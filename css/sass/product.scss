@@ -1,11 +1,9 @@
 .product-slider {
   display: flex;
   align-items: center;
-
 }
 
 .product__wrapper {
-
   overflow: hidden;
 }
 
@@ -24,7 +22,7 @@
   }
 }
 
-.products{
+.product__list{
   display: flex;
   position: relative;
   transition: right .3s

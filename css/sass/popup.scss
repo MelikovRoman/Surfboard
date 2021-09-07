@@ -1,0 +1,28 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $gray;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+
+  &--active {
+    visibility: inherit;
+  }
+}
+
+.popup__content {
+
+  background-color: $white;
+  text-align: center;
+  padding: rem(37px) rem(68px) rem(37px) rem(68px);
+}
+
+.popup__text {
+  margin-bottom: rem(18px);
+}
