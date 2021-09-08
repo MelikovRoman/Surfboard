@@ -1098,6 +1098,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    margin-left: 0;
   }
 }
 
