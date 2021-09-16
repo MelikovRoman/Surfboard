@@ -24,6 +24,22 @@
   }
 }
 
+.dropdown__content-second {
+  display: none;
+  width: rem(273px);
+  position: absolute;
+  background-color: $light-gray;
+  overflow: auto;
+  padding: rem(25px) rem(25px) rem(30px) rem(30px);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+  margin-left: rem(91px);
+
+  &--show {
+    display: block;
+  }
+}
+
 .dropdown__item {
   display: flex;
   justify-content: space-between;

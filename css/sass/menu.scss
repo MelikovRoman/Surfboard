@@ -3,6 +3,11 @@
   position: absolute;
   top: 19%;
   left: 7%;
+
+  @include phone {
+    font-size: rem(40px);
+    left: 4%;
+  }
 }
 
 .menu__list {
