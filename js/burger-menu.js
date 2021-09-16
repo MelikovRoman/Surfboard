@@ -6,9 +6,13 @@ const body = document.querySelector('body');
 
 const links = document.querySelectorAll('.nav__link');
 
+const isTablet = window.matchMedia("(max-width: 768px)").matches;
+
 links.forEach(function(element){
   element.addEventListener('click' , preventEvent);
-  element.addEventListener('click' , toggleMenu);
+  if (isTablet) {
+    element.addEventListener('click' , toggleMenu);
+  }
 })
 
 function preventEvent( event ) {

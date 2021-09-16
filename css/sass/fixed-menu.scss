@@ -4,13 +4,17 @@
   right: 3%;
   z-index: $z-fixed-menu;
 
+
   @include tablet {
     display: none;
   }
+
+
 }
 
 .fixed-menu__item {
   margin-bottom: rem(7px);
+  color: $black;
 
   &:last-child {
     margin-bottom: 0;
@@ -19,6 +23,10 @@
   &--active{
     .fixed-menu__link {
       border-color: $white;
+
+      &--shadowed {
+        border-color: $black;
+      }
     }
   }
 }
@@ -30,17 +38,21 @@
   height: rem(19px);
   border-radius: 50%;
   border: rem(1px) solid transparent;
+}
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: rem(9px);
-    height: rem(9px);
-    border-radius: 50%;
-    background: $white;
+.fixed-menu__link-span {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(9px);
+  height: rem(9px);
+  border-radius: 50%;
+  background: $white;
+
+  &--shadowed {
+    background: $black;
   }
 }

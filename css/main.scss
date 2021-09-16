@@ -17,6 +17,8 @@ $light-blue: #1968B1;
 $gray: #666666;
 $light-gray: #F2F5F4;
 $extra-light-gray: #F8FAF9;
+$special-black: #333537E5;
+
 
 //z-index
 $z-fixed-menu: 100;
@@ -55,3 +57,5 @@ $z-fixed-menu: 100;
 @import "sass/team.scss";
 @import "sass/popup.scss";
 @import "sass/map.scss";
+@import "sass/menu.scss";
+@import "sass/player.scss";

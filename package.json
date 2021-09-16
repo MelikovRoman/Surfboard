@@ -1,0 +1,23 @@
+{
+  "name": "surf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelikovRoman/Surfboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelikovRoman/Surfboard/issues"
+  },
+  "homepage": "https://github.com/MelikovRoman/Surfboard#readme",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jquery-touchswipe": "^1.6.19"
+  }
+}

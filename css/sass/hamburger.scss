@@ -26,10 +26,12 @@
 
       &:nth-child(2){
         transform:rotate(45deg);
+        background: $white;
       }
 
       &:nth-child(3){
-      transform:rotate(-45deg) translateY(-6px) translateX(5px);
+        transform:rotate(-45deg) translateY(-6px) translateX(5px);
+        background: $white;
     }
     }
   }
@@ -41,4 +43,8 @@
   height: 4px;
   border-radius: 9px;
   transition:all .3s;
+
+  &--shadowed {
+    background: $black;
+  }
 }

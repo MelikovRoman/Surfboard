@@ -25,6 +25,14 @@
   &--slider {
     background-color: $extra-light-gray;
   }
+
+  &--menu {
+    position: relative;
+    background-image: url(../img/menu-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .section__title {
@@ -33,5 +41,9 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
+  &--video {
+    margin-bottom: rem(30px);
+  }
 }
 
