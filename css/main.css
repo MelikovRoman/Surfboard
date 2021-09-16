@@ -1604,13 +1604,16 @@ img {
   display: flex;
   height: 100%;
 }
-.menu__item:first-child .menu__heading {
+
+.menu__bg-one {
   background-image: url(../img/slide-bg1.jpg);
 }
-.menu__item:nth-child(2) .menu__heading {
+
+.menu__bg-two {
   background-image: url(../img/slide-bg2.jpg);
 }
-.menu__item:last-child .menu__heading {
+
+.menu__bg-three {
   background-image: url(../img/slide-bg3.jpg);
 }
 

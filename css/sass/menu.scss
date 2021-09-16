@@ -21,22 +21,20 @@
 .menu__item {
   display: flex;
   height: 100%;
-
-  &:first-child
-   .menu__heading {
-      background-image: url(../img/slide-bg1.jpg);
-  }
-
-  &:nth-child(2)
-    .menu__heading {
-      background-image: url(../img/slide-bg2.jpg);
-  }
-
-  &:last-child
-   .menu__heading {
-      background-image: url(../img/slide-bg3.jpg);
-  }
 }
+
+.menu__bg-one {
+  background-image: url(../img/slide-bg1.jpg);
+}
+
+.menu__bg-two {
+  background-image: url(../img/slide-bg2.jpg);
+}
+
+.menu__bg-three {
+  background-image: url(../img/slide-bg3.jpg);
+}
+
 
 .menu__heading {
   position: relative;
