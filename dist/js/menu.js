@@ -23,11 +23,6 @@ const mesureWidth = item => {
     reqItemWidth = 500;
   }
 
- /* if (isPhone) {
-    reqItemWidth = screenWidth ;
-  }*/
-
-
   return {
     container: reqItemWidth,
     textContainer: reqItemWidth - paddingRight - paddingLeft
