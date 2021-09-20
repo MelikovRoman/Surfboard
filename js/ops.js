@@ -109,16 +109,16 @@ $("[data-scroll-to]").click(e => {
   perfomeTranition(reqSection.index());
 })
 
-$("body").swipe( {
+//$("body").swipe( {
   //Generic swipe handler for all directions
-  swipe:function(event, direction) {
-    const scroller = viewportScroller();
-    let scrollDirection = "";
+  //swipe:function(event, direction) {
+   // const scroller = viewportScroller();
+   // let scrollDirection = "";
 
-    if (direction == "up") scrollDirection = "next";
-    if (direction == "down") scrollDirection = "prev";
+    //if (direction == "up") scrollDirection = "next";
+    //if (direction == "down") scrollDirection = "prev";
 
 
-    scroller[scrollDirection]();
-  }
-});
+    //scroller[scrollDirection]();
+ // }
+//});
