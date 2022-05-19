@@ -1605,18 +1605,6 @@ img {
   height: 100%;
 }
 
-.menu__bg-one {
-  background-image: url(../img/slide-bg-one.jpg);
-}
-
-.menu__bg-two {
-  background-image: url(../img/slide-bg-two.jpg);
-}
-
-.menu__bg-three {
-  background-image: url(../img/slide-bg-three.jpg);
-}
-
 .menu__heading {
   position: relative;
   width: 5.6666666667rem;
@@ -1631,6 +1619,18 @@ img {
   .menu__heading {
     width: 4.4444444444rem;
   }
+}
+
+.menu__bg-one {
+  background-image: url(../img/slide-bg-one.jpg);
+}
+
+.menu__bg-two {
+  background-image: url(../img/slide-bg-two.jpg);
+}
+
+.menu__bg-three {
+  background-image: url(../img/slide-bg-three.jpg);
 }
 
 .menu__heading-text {
