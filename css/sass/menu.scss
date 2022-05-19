@@ -34,18 +34,18 @@
   @include phone {
     width: rem(80px);
   }
-}
 
-.menu__bg-one {
-  background-image: url(../img/slide-bg-one.jpg);
-}
+  &--bg-one {
+    background-image: url('/img/slide-bg-one.jpg');
+  }
 
-.menu__bg-two {
-  background-image: url(../img/slide-bg-two.jpg);
-}
+  &--bg-two {
+    background-image: url('/img/slide-bg-two.jpg');
+  }
 
-.menu__bg-three {
-  background-image: url(../img/slide-bg-three.jpg);
+  &--bg-three {
+    background-image: url('/img/slide-bg-three.jpg');
+  }
 }
 
 .menu__heading-text {

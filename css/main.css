@@ -1620,17 +1620,14 @@ img {
     width: 4.4444444444rem;
   }
 }
-
-.menu__bg-one {
-  background-image: url(../img/slide-bg-one.jpg);
+.menu__heading--bg-one {
+  background-image: url("/img/slide-bg-one.jpg");
 }
-
-.menu__bg-two {
-  background-image: url(../img/slide-bg-two.jpg);
+.menu__heading--bg-two {
+  background-image: url("/img/slide-bg-two.jpg");
 }
-
-.menu__bg-three {
-  background-image: url(../img/slide-bg-three.jpg);
+.menu__heading--bg-three {
+  background-image: url("/img/slide-bg-three.jpg");
 }
 
 .menu__heading-text {
