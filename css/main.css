@@ -1621,13 +1621,13 @@ img {
   }
 }
 .menu__heading--bg-one {
-  background-image: url("/img/slide-bg-one.jpg");
+  background-image: url(/img/slide-bg-one.jpg);
 }
 .menu__heading--bg-two {
-  background-image: url("/img/slide-bg-two.jpg");
+  background-image: url(/img/slide-bg-two.jpg);
 }
 .menu__heading--bg-three {
-  background-image: url("/img/slide-bg-three.jpg");
+  background-image: url(/img/slide-bg-three.jpg);
 }
 
 .menu__heading-text {
